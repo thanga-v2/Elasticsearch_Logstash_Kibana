@@ -1,0 +1,50 @@
+# book is the index
+
+PUT books/_doc/1
+{
+  "title":"Effective Java",
+  "author":"Joshua Bloch",
+  "release_date":"2001-06-01",
+  "amazon_rating":4.7,
+  "best_seller":true,
+  "prices": {
+    "usd":9.95,
+    "gbp":7.95,
+    "eur":8.95
+  }
+}
+
+# response - 
+
+{
+  "_index": "books",
+  "_id": "1",
+  "_version": 2,
+  "result": "updated",
+  "_shards": {
+    "total": 2,
+    "successful": 1,
+    "failed": 0
+  },
+  "_seq_no": 23,
+  "_primary_term": 1
+}
+
+# response - 
+
+
+{
+  "_index": "books",
+  "_id": "2",
+  "_version": 23,
+  "result": "updated",
+  "_shards": {
+    "total": 2,
+    "successful": 1,
+    "failed": 0
+  },
+  "_seq_no": 24,
+  "_primary_term": 1
+}
+
+
